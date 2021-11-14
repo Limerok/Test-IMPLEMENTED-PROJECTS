@@ -135,7 +135,7 @@ body{
 }
 .button-img {
     position: absolute;
-    z-index: 2333;
+    z-index: 3;
     top: 40%;
     display: none;
     width: 100%;
