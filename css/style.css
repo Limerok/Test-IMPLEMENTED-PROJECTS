@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro'), local('DINPro'),
+        url('../fonts/DINPro.woff2') format('woff2'),
+        url('../fonts/DINPro.woff') format('woff'),
+        url('../fonts/DINPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro Bold'), local('DINPro-Bold'),
+        url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff'),
+        url('../fonts/DINPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro Bold Italic'), local('DINPro-BoldItalic'),
+        url('../fonts/DINPro-BoldItalic.woff2') format('woff2'),
+        url('../fonts/DINPro-BoldItalic.woff') format('woff'),
+        url('../fonts/DINPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro Italic'), local('DINPro-Italic'),
+        url('../fonts/DINPro-Italic.woff2') format('woff2'),
+        url('../fonts/DINPro-Italic.woff') format('woff'),
+        url('../fonts/DINPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro Medium'), local('DINPro-Medium'),
+        url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff') format('woff'),
+        url('../fonts/DINPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro Medium Italic'), local('DINPro-MediumItalic'),
+        url('../fonts/DINPro-MediumItalic.woff2') format('woff2'),
+        url('../fonts/DINPro-MediumItalic.woff') format('woff'),
+        url('../fonts/DINPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+h1,h2,h3,h4,p,a {
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'DIN Pro';
+}
+.container{
+    max-width: 1650px;
+    margin: auto;
+}
+.project {
+    padding-top: 73px;
+}
+.project-text {
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+}
+.title-project {
+    font-size: 46px;
+    margin-bottom: 70px;
+}
+.project-text-description {
+    margin: -15px;
+    padding-bottom: 140px;
+}
+.text-project {
+    font-size: 18px;
+    margin: 15px;
+}
+
+.project-images {
+    display: flex;
+}
+.project-images-item {
+    position: relative;
+    max-width: 550px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.project-images-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    height: 342px;
+    width: 100%;
+    background: linear-gradient(transparent, #25364a);
+    opacity: 0.4;
+}
+  
+.project-img {
+    transition: 0.4s;
+    width: 100%;
+    filter: saturate(63%);
+}
+.project-images-item:hover>.project-img {
+    filter: saturate(0%);
+}
+.project-img-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.button-project {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 106px;
+}
+.add-project {
+    border: 3px solid #00264c;
+    padding: 22px 120px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: #344258;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.add-project:hover {
+    background:#00264c59;
+    color: #fff;
+}
+
+/*footer*/
+.footer {
+    background-color: #0d1b2b;
+    padding: 0px 20px 0px 20px;
+    margin: 0 -20px 0 -20px;
+    padding-top: 32px;
+    padding-bottom: 97px;
+}
+.footer-container {
+    display: flex;
+    max-width: 1218px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts-title {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 74px;
+}
+.contacts-text {
+    font-size: 18px;
+    color: #fff;
+}
+.contacts-name {
+    margin-bottom: 28px;
+}
+.contacts-address {
+    max-width: 475px;
+}
+.contacts-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-telephone {
+    display: flex;
+    flex-direction: column;
+    margin: -7px;
+    margin-right: 69px;
+}
+.email-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-top: 18px;
+    padding-bottom: 6px;
+    border-left: 3px solid #0058a7;
+}
+.telephone {
+    font-size: 30px;
+    color: #fff;
+    margin: 7px;
+    text-decoration: none;
+}
+.email-text {
+    font-size: 18px;
+    color: #3d95e3;
+    text-decoration: none;
+}
+.email {
+    margin-bottom: 26px;
+}
+.input-form {
+    background-color: #546682;
+    padding: 22px 35px;
+    border: none;
+    text-decoration: none;
+    margin: 2px;
+    color: #fff;
+    font-family: 'DIN Pro';
+    font-size: 15px;
+}
+.input-form::placeholder {
+    color: #fff;
+    font-family: 'DIN Pro';
+    font-size: 15px;
+}
+.feedback {
+    width: 550px;
+}
+.fedback-container{
+    display: flex;
+    flex-direction: column;
+    padding: 43px;
+    border: 5px solid #546682;
+}
+.fedback-form {
+    margin: -2px;
+    display: flex;
+    flex-direction: column;
+}
+.form-text {
+    height: 112px;
+}
+.policy {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4c89c1;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    max-width: fit-content;
+    margin: 18px auto;
+}
+.button-form {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fff;
+    width: 290px;
+    padding: 23px 0;
+    margin: auto;
+}
+
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .add-project {
+        padding: 16px 70px;
+    }
+    .footer-container {
+        max-width: 960px;
+    }
+    .contacts-container {
+        flex-direction: column;
+    }
+    .email-container {
+        padding-left: 0;
+        padding-bottom: 0;
+        border-left: none; 
+    }
+    .feedback {
+        width: 500px;
+    }
+    .fedback-container {
+        padding: 30px;
+    }
+    .button-form {
+        width: 280px;
+        padding: 16px 0;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .footer-container {
+        max-width: 750px;
+    }
+    .project-text-description {
+        padding-bottom: 50px;
+    }
+    .contacts-address {
+        max-width: 410px;
+    }
+    .project-images-item::after {
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .footer-container {
+        max-width: 560px;
+    }
+    .project-images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .feedback {
+        order: 0;
+    }
+    .contacts {
+        order: 1;
+        margin-top: 40px;
+    }
+    .contacts-title {
+        margin-bottom: 20px;
+    }
+    .contacts-container {
+        margin-top: 20px;
+    }
+    .footer {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+    .footer-container {
+        max-width: 90%;
+    }
+    .feedback {
+        width: 100%;
+    }
+    .contacts-telephone {
+        margin-right: 0;
+    }
+}
+@media (max-width: 426px) {
+    .policy {
+        text-decoration: underline;
+        border-bottom: none;
+        margin: 18px auto;
+    }
+    .button-form {
+        width: 100%;
+    }
+    .fedback-container {
+        padding: 10px;
+    }
+    .policy {
+        text-align: center;
+    }
+    .title-project {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .contacts-title {
+        font-size: 36px;
+    }
+}
+@media (max-width: 350px) {
+    .title-project {
+        font-size: 33px;
+    }
+    .text-project {
+        font-size: 16px;
+    }
+    .add-project {
+        padding: 16px 50px;
+    }
+    .contacts-text {
+        font-size: 16px;
+    }
+    .contacts-title {
+        font-size: 33px;
+    }
+    .telephone {
+        font-size: 26px;
+    }
+}
