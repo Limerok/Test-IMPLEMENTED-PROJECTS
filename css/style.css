@@ -65,6 +65,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'DIN Pro';
+    overflow-x: hidden;
 }
 .container{
     max-width: 1650px;
@@ -325,6 +326,9 @@ body{
     .button-form {
         width: 280px;
         padding: 16px 0;
+    }
+    .project-text-description {
+        margin: 0;
     }
 }
 @media (max-width: 992px) {
