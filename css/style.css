@@ -65,6 +65,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'DIN Pro';
+    overflow-x: hidden;
 }
 .container{
     max-width: 1650px;
@@ -128,6 +129,35 @@ body{
     width: 100%;
     text-align: center;
     z-index: 1;
+}
+.fancybox-text {
+    display: none;
+}
+.button-img {
+    position: absolute;
+    z-index: 2333;
+    top: 40%;
+    display: none;
+    width: 100%;
+    transition: 0.4s;
+}
+.button-project-item {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fff;
+    width: 290px;
+    padding: 23px 0;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.button-project-item:hover{
+    background:#00264c59;
+}
+.project-images-item:hover>.button-img{
+    display: flex;
 }
 .button-project {
     display: flex;
@@ -263,8 +293,13 @@ body{
     width: 290px;
     padding: 23px 0;
     margin: auto;
+    cursor: pointer;
+    transition: 0.4s;
 }
-
+.button-form:hover {
+    background:#00264c59;
+}
+/*Адаптив*/
 @media (max-width: 1260px) {
     .container {
         max-width: 960px;
@@ -398,4 +433,59 @@ body{
     .telephone {
         font-size: 26px;
     }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+    background-color:#0000007d;
+}
+.fancybox-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fancybox-block {
+    position: relative;
+    padding: 30px;
+    background-color:#fff;
+    border: 1px solid #000;
+    border-radius:20px;
+    text-align: center;
+    width: 60%;
+}
+
+.fancybox-close {
+    transition: 0.4s;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 25px;
+    height: 25px;
+    opacity: 0.4;
+}
+.fancybox-close:hover {
+    opacity: 1;
+}
+.fancybox-close:before, .fancybox-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: #19005f;
+}
+.fancybox-close:before {
+    transform: rotate(45deg);
+}
+.fancybox-close:after {
+    transform: rotate(-45deg);
 }
