@@ -24,9 +24,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         fancyboxBlockAdd.appendChild(img);
         fancyboxBlockAdd.appendChild(h3);
         fancyboxBlockAdd.appendChild(text);
-
-
-        
     }
 
     projectImages.addEventListener('click', event => {
